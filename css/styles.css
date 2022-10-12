@@ -174,7 +174,7 @@ button {
 /* Заголовок H1 */
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -337,6 +337,7 @@ button {
 
 .footer-box {
   display: flex;
+  align-items: baseline;  /* ????11111 */
   /* flex-direction: column;  */
 }
 /* .footer-main:not(:first-child) {
@@ -389,7 +390,7 @@ button {
 
 .footer-title {
   display: block;
-  margin-top: 12px;
+  /* margin-top: 12px;    ????11111 */
 
   font-weight: 700;
   font-size: 14px;
@@ -519,6 +520,9 @@ button {
   line-height: 1.88;
   color: var(--main-font-color);
 }
+.gallery-link {
+  display: block;
+}
 /* -------------lesson-4--------------- */
 .background-svg-icon {
   display: flex;
@@ -559,7 +563,7 @@ button {
   background-color: var(--accent-color);
 }
 .team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus.team-soc-icon {
+.team-soc-link:focus .team-soc-icon {
   fill: var(--main-ligth-color);
   /* цвет svg при hover focus соц-сетей*/
 }
@@ -588,6 +592,8 @@ button {
 
   width: 170px;
   height: 92px;
+  /* width: 100%;
+  height: 100%; */
   border-width: 1px;
   border-color: var(--border-br-color2);
   border-style: solid;
