@@ -6,6 +6,8 @@
   --border-br-color: #2f303a;
   --border-br-color2: #afb1b8;
   --section-team-bg-color: #f5f4fa;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
@@ -145,6 +147,22 @@ button {
 .nav .nav-list .current {
   color: var(--accent-color);
 }
+/* полоса под навигацией в шапке */
+.nav-list-item {
+  position: relative; 
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
 
 .nav-list-item + .nav-list-item {
   margin-left: 50px;
@@ -171,6 +189,8 @@ button {
   fill: currentColor;
 }
 
+
+
 /* Заголовок H1 */
 
 .hero {
@@ -186,6 +206,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position: 50% 50%;
 }
 
 .hero-section-title {
@@ -211,6 +232,12 @@ button {
   margin-top: 30px;
   border-radius: 4px;
   padding: 10px 32px;
+  transition: background-color 250ms var(--time-function);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: rgb(24, 140, 232);
 }
 
 .hero-btn-text {
@@ -512,6 +539,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--secondory-font-color);
 }
 
 .gallery-project-text {
@@ -522,6 +550,34 @@ button {
 }
 .gallery-link {
   display: block;
+}
+
+/* ховер, шторка  */
+.gallery-img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item .link:hover .gallery-paragraph,
+.gallery-item .link:focus .gallery-paragraph {
+  transform: translateY(0);
+}
+
+.gallery-paragraph {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--time-function);
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--main-ligth-color);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 /* -------------lesson-4--------------- */
 .background-svg-icon {
