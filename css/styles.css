@@ -561,8 +561,8 @@ button {
   overflow: hidden;
 }
 
-.gallery-item .link:hover .gallery-paragraph,
-.gallery-item .link:focus .gallery-paragraph {
+.gallery-item, .link:hover, .gallery-paragraph,
+.gallery-item, .link:focus, .gallery-paragraph {
   transform: translateY(0);
 }
 
