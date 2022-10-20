@@ -137,6 +137,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 
 .nav-list .link:hover,
@@ -146,10 +147,12 @@ button {
 
 .nav .nav-list .current {
   color: var(--accent-color);
+
 }
 /* полоса под навигацией в шапке */
 .nav-list-item {
   position: relative; 
+ 
 }
 
 .current::after {
@@ -182,6 +185,7 @@ button {
   padding: 32px 0;
   display: flex;  
   align-items: center;
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 .svg-icon-envelope {
   margin-right: 10px;
@@ -299,6 +303,32 @@ button {
   gap: 30px; /*вместо space-between */
 }
 
+.products-item {
+  position: relative;
+}
+
+.products-img {
+  display: block;
+}
+.products-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /* Наша команда */
 
 .team-style {
@@ -349,6 +379,15 @@ button {
   color: var(--main-font-color);
 }
 
+.team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+}
 /* -----------------Подвал----------------- */
 .footer-address:hover,
 .footer-address:focus,
@@ -456,6 +495,7 @@ button {
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 
 .footer-icon-link:hover,
@@ -480,8 +520,14 @@ button {
   margin-left: 8px;
 }
 
+.button-item {
+  border-radius: 4px;
+  transition: box-shadow 250ms var(--time-function);
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
+ 
   color: var(--main-ligth-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -503,6 +549,7 @@ button {
   color: var(--secondory-font-color);
   letter-spacing: 0.03em;
   background-color: var(--section-team-bg-color);
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 
 /* Галерея Портфолио */
