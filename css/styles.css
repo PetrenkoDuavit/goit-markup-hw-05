@@ -552,7 +552,7 @@ button {
   color: var(--secondory-font-color);
   letter-spacing: 0.03em;
   background-color: var(--section-team-bg-color);
-  transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250 var(--time-function);
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 /* Галерея Портфолио */
@@ -683,7 +683,7 @@ button {
   border-radius: 50%;
  /* испаравления лесон 4 */
   color: var(--border-br-color2);
-  transition: background-color 250ms var(--time-function), color var(--time-function);
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
